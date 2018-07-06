@@ -100,6 +100,13 @@ funWithReturn(){
 	echo "The digits are $aNum and $bNum"
 	return $(($aNum+$bNum))
 	}
-funWithReturn
-echo "the sum of two digits is $? !"
+#funWithReturn
+#echo "the sum of two digits is $? !"
 
+funWithParam(){
+	echo "the first para is $1"
+	echo "the tenth para is ${10}"
+	echo "the total number of para is $#"
+	echo "\$0 is $0"
+	}
+funWithParam 1 2 3 4 5 6 7 8 9 10
